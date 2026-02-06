@@ -1,0 +1,187 @@
+# OSX
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+**/.xcode.env.local
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Metro
+.metro-health-check*
+
+# Testing
+coverage/
+
+# ===================
+# Google Project IDX
+# ===================
+
+# IDX workspace cache
+.idx/.cache/
+.idx/integrations.json
+.idx/gc/
+
+# IDX user-specific settings
+.idx/settings.json
+.idx/user-settings.json
+
+# IDX temporary files
+.idx/tmp/
+.idx/*.tmp
+.idx/*.log
+
+# IDX preview cache
+.idx/previews/
+
+# ===================
+# React Native
+# ===================
+
+# React Native Metro bundler
+.expo/
+__generated__/
+
+# Watchman
+.watchmanconfig
+
+# Buck
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# Proguard folder
+proguard/
+
+# Log Files
+*.log
+
+# Android Studio
+*.jks
+*.p12
+*.key
+
+# ===================
+# IDE and Editors
+# ===================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*#
+.#*
+
+# ===================
+# Build outputs
+# ===================
+
+# Android builds
+android/app/build/
+android/build/
+android/.gradle/
+android/captures/
+android/.cxx/
+
+# iOS builds
+ios/build/
+ios/Pods/
+
+# Release APK/AAB
+*.apk
+*.aab
+!android/app/debug.apk
+
+# ===================
+# Miscellaneous
+# ===================
+
+# Secrets and credentials
+secrets/
+credentials/
+*.pem
+*.p8
+
+# Debug files
+*.dSYM.zip
+*.dSYM
+
+# Sentry
+.sentryclirc
+
+# Flipper
+.flipper/
