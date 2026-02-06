@@ -1,18 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {StatusBar} from 'expo-status-bar';
 import {PostItProvider, SyncProvider} from './src/context';
 import {HomeScreen, SettingsScreen} from './src/screens';
-import {configureGoogleSignIn} from './src/services';
 
 type Screen = 'home' | 'settings';
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<Screen>('home');
-
-  // Initialize Google Sign-In on app start
-  useEffect(() => {
-    configureGoogleSignIn();
-  }, []);
 
   const navigateToSettings = () => {
     setCurrentScreen('settings');
@@ -24,6 +19,7 @@ const App: React.FC = () => {
 
   return (
     <SafeAreaProvider>
+      <StatusBar style="auto" />
       <SyncProvider>
         <PostItProvider>
           {currentScreen === 'home' ? (

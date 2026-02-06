@@ -185,3 +185,17 @@ credentials/
 
 # Flipper
 .flipper/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# EAS
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
